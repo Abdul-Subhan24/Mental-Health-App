@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".favourites">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="15dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+
+
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="5dp"
+
+            android:id="@+id/usercount"
+
+            android:text="Favourites"
+            android:textSize="28sp"
+            android:textColor="#171717"
+            android:fontFamily="@font/montserrat_medium"
+            android:drawablePadding="5dp"
+            android:drawableStart="@drawable/favourites_icon"
+            android:drawableTint="#171717"
+            android:layout_marginBottom="20dp"
+
+            android:layout_height="wrap_content"/>
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:id="@+id/chatrecyclerview"
+            android:layout_below="@id/usercount"
+            />
+
+        <TextView
+            android:id="@+id/nofavs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="15dp"
+            android:drawableStart="@drawable/fav_tick"
+            android:fontFamily="@font/montserrat"
+            android:text="No helpers are favourited yet"
+            android:textSize="20sp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"
+            android:layout_alignParentBottom="true"
+            android:paddingVertical="10dp"
+            android:id="@+id/extraschat"
+            android:gravity="center">
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#e0e0e0"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="14sp"
+                android:drawablePadding="3dp"
+                android:fontFamily="@font/montserrat"
+                android:text="Your favourited helpers will show up here"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+</FrameLayout>

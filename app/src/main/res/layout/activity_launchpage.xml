@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:layout_marginTop="5dp"
+    tools:context=".launchpage">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="120dp"
+            android:layout_height="104dp"
+            android:layout_marginEnd="28dp"
+
+            android:layout_weight="1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/clean_icon" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/montserrat"
+            android:letterSpacing="0.1"
+            android:text="SignUp"
+            android:textColor="#101010"
+            android:textSize="34sp"
+            app:layout_constraintEnd_toStartOf="@+id/imageView2"
+            app:layout_constraintHorizontal_bias="0.515"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="234dp"
+        app:srcCompat="@drawable/registerbg" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:gravity="center" >
+
+    <Button
+        android:id="@+id/patientsign"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawablePadding="10dp"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp"
+        android:padding="20dp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/ubuntu_bold"
+        android:letterSpacing="0.07"
+        android:drawableLeft="@drawable/patient__2_"
+
+        android:text="SignUp as Patient"
+       android:backgroundTint="#140005"/>
+
+    <Button
+        android:id="@+id/helpersign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawablePadding="10dp"
+        android:textSize="18sp"
+        android:fontFamily="@font/ubuntu_bold"
+        android:letterSpacing="0.07"
+
+        android:layout_margin="10dp"
+        android:padding="20dp"
+        android:drawableLeft="@drawable/therapist__2_"
+        android:backgroundTint="#4749EF"
+        android:textColor="@color/white"
+
+
+
+
+        android:text="SignUp as Helper"
+       />
+
+</LinearLayout>
+
+
+</LinearLayout>

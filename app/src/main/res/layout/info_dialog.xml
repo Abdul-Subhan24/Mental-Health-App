@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/info_dialogbg"
+    android:padding="2dp">
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+ android:id="@+id/crosslayout"
+    android:layout_height="wrap_content"
+    android:gravity="end"
+    android:layout_alignParentEnd="true"
+
+
+
+
+
+    >
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/crossicon"
+
+        android:layout_gravity="end"
+
+        android:layout_alignParentTop="true"
+
+        android:src="@drawable/cross_icon"
+
+
+        />
+
+</LinearLayout>
+
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/detailslayout"
+
+    android:layout_below="@id/crosslayout"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textSize="26sp"
+        android:text="User's Info"
+        android:drawableStart="@drawable/info_icon"
+        android:drawablePadding="3dp"
+        android:padding="5dp"
+
+
+
+        android:fontFamily="@font/montserrat_medium"
+        android:textColor="#171717"
+        android:letterSpacing="0.0823"
+
+        />
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:scrollbars="none"
+        android:id="@+id/scrollbar"
+        android:layout_height="match_parent"
+        android:layout_marginTop="15dp"
+
+
+
+        >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/crossicon"
+        >
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/showtext"
+            android:orientation="vertical">
+
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:id="@+id/dialog_name"
+                android:textSize="23sp"
+                android:text="Syed Mahmood"
+                android:drawableStart="@drawable/user_ucon"
+                android:padding="5dp"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/montserrat"
+                android:textColor="#171717"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:id="@+id/dialog_age"
+                android:textSize="23sp"
+                android:text="20 years"
+                android:drawableStart="@drawable/age_icon"
+                android:padding="5dp"
+                android:drawablePadding="10dp"
+                android:layout_marginStart="5dp"
+                android:fontFamily="@font/montserrat"
+                android:textColor="#171717"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:id="@+id/dialog_gender"
+                android:textSize="23sp"
+                android:text="Male"
+                android:drawableStart="@drawable/gender_icon2"
+               android:drawableTint="#049c94"
+                android:padding="5dp"
+                android:drawablePadding="10dp"
+                android:layout_marginStart="5dp"
+                android:fontFamily="@font/montserrat"
+                android:textColor="#171717"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:id="@+id/dialog_profession"
+                android:textSize="23sp"
+                android:text="Business"
+                android:drawableStart="@drawable/work_icon"
+
+                android:padding="5dp"
+                android:drawablePadding="10dp"
+                android:layout_marginStart="5dp"
+                android:fontFamily="@font/montserrat"
+                android:textColor="#171717"
+                />
+
+
+
+
+
+        </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="24sp"
+        android:drawablePadding="5dp"
+        android:text="Question Set"
+        android:padding="5dp"
+        android:layout_marginStart="5dp"
+        android:drawableStart="@drawable/question_icon"
+        android:fontFamily="@font/montserrat"
+        android:textColor="#171717"
+        />
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:id="@+id/qsetrecycler"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            />
+
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+
+
+</RelativeLayout>

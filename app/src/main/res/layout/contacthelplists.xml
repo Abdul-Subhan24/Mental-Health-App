@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="20dp"
+
+    app:cardCornerRadius="10dp"
+
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical"
+
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+
+
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <ImageView
+                    android:id="@+id/supportlogo"
+
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+
+                    android:layout_weight="1"
+
+                    app:srcCompat="@drawable/coojlogo" />
+
+                <TextView
+                    android:id="@+id/supporttitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/inter_extrabold"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="15dp"
+                    android:text="iCALL "
+                    android:textColor="#171717"
+                    android:textSize="22sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/supportdesc"
+
+                    android:fontFamily="@font/montserrat"
+                    android:text="iCALL is a psychosocial helpline for individuals in emotional and psychological distress."
+                    android:textColor="#2E2E2E"
+
+
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:drawableLeft="@drawable/contact_sign"
+                    android:id="@+id/supportnumber"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="@font/inter_extrabold"
+                    android:maxLines="1"
+                    android:paddingTop="5dp"
+
+
+
+                    android:text="022-25521111"
+                    android:textColor="#2E2E2E"
+                    android:textSize="18sp" />
+
+
+
+
+
+
+            </LinearLayout>
+
+
+
+        <Button
+            android:id="@+id/knowbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#5abbc3"
+            android:textColor="@color/white"
+            android:layout_gravity="end"
+            android:layout_marginEnd="10dp"
+            android:textSize="16sp"
+            android:layout_marginBottom="10dp"
+
+            android:layout_weight="1"
+            android:text="Know More" />
+
+
+
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/wave"
+        android:layout_marginTop="200dp">
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@color/white"
+
+  >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="20dp"
+    android:paddingTop="8dp"
+
+    >
+
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="7dp"
+        android:text="Describe how are you feeling?"
+        android:padding="4dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:textColor="#171717"
+        android:textSize="18sp" />
+
+    <TextView
+
+        android:id="@+id/answer"
+        android:layout_below="@+id/question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" I am not feeling that greath these days , I don't know why.."
+        android:fontFamily="@font/inter_regular"
+        android:layout_marginTop="2dp"
+        android:paddingHorizontal="7dp"
+
+        android:textSize="16sp"
+        />
+
+</RelativeLayout>
+</androidx.cardview.widget.CardView>

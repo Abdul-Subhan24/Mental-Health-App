@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".patientfragment">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical"
+
+
+
+        tools:context=".patientscreen">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:scrollbars="none"
+            android:id="@+id/scrollbar"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:id="@+id/usergreet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+
+                    android:layout_marginVertical="5dp"
+
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:drawableStart="@drawable/man_with_heart_svgrepo_com"
+                    android:drawablePadding="-2dp"
+
+
+                    android:fontFamily="@font/montserrat_medium"
+                    android:paddingHorizontal="10dp"
+
+                    android:text=" Welcome Syed,"
+                    android:textColor="#171717"
+                    android:textSize="26sp" />
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="start"
+                    app:cardUseCompatPadding="true"
+                    android:elevation="10dp"
+                    android:layout_marginTop="5dp"
+                    android:background="#EEEDE7"
+                    android:layout_gravity="start"
+                    android:layout_height="wrap_content"
+
+                    >
+
+
+                    <ImageView
+                        android:id="@+id/imageView5"
+                        android:layout_width="match_parent"
+                        android:layout_height="400dp"
+                        android:layout_marginTop="-5dp"
+
+                        app:srcCompat="@drawable/homepageic" />
+
+
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:drawablePadding="5dp"
+                    android:drawableTint="#2bacb1"
+                    android:drawableStart="@drawable/guide_icon"
+                    android:fontFamily="@font/montserrat"
+                    android:paddingHorizontal="10dp"
+                    android:text="Health Guides"
+                    android:textColor="#171717"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="24sp" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/ytrecycler"
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="15dp"
+                    android:layout_height="wrap_content"/>
+
+
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:elevation="10dp"
+
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:drawablePadding="3dp"
+                        android:drawableTint="#2bacb1"
+                        android:drawableStart="@drawable/circlemedical"
+                        android:fontFamily="@font/montserrat"
+                        android:paddingHorizontal="10dp"
+                        android:text="Need Help?"
+                        android:textColor="#171717"
+                        android:textSize="24sp" />
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:layout_width="match_parent"
+                        android:id="@+id/recyclervie"
+                        android:layout_height="wrap_content">
+
+                    </androidx.recyclerview.widget.RecyclerView>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat"
+                        android:layout_marginTop="3dp"
+                        android:textColor="@color/fgray"
+                        android:textSize="12sp"
+                        android:padding="5dp"
+                        android:maxLines="1"
+                        android:text="Contact one of these helplines for help whenever needed."/>
+
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray"/>
+
+
+
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+    android:orientation="vertical"
+
+    tools:context=".QuestionSetAct">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:layout_marginTop="12dp"
+
+        android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Additional Details"
+        android:textColor="#171717"
+       android:layout_gravity="center"
+        android:fontFamily="@font/montserrat"
+        android:drawablePadding="5dp"
+        android:drawableStart="@drawable/detail2_icon"
+        android:textSize="23sp"
+        />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="1dp"
+            android:background="#e0e0e0"
+           />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:padding="5dp"
+        android:layout_height="wrap_content">
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:id="@+id/profession"
+          android:drawableStart="@drawable/work_icon"
+          android:textSize="20sp"
+          android:textColor="#171717"
+          android:layout_marginTop="25dp"
+          android:drawablePadding="5dp"
+          android:layout_marginBottom="5dp"
+          android:text="Select your profession"/>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_below="@+id/profession"
+            android:id="@+id/profession_selected"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:layout_width="match_parent"
+                android:id="@+id/employee"
+                android:layout_height="wrap_content"
+                android:text="Business"/>
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:layout_width="match_parent"
+                android:id="@+id/student"
+                android:layout_height="wrap_content"
+                android:text="Employee"/>
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/buisness"
+                android:text="Unemployeed"/>
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/unemployed"
+                android:text="Student"/>
+
+
+
+        </RadioGroup>
+
+        <TextView
+
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:id="@+id/gender"
+            android:drawableTint="#2f88ff"
+            android:drawableStart="@drawable/gender_icon2"
+          android:textSize="20sp"
+          android:textColor="#171717"
+          android:layout_marginTop="30dp"
+          android:layout_marginBottom="5dp"
+            android:drawablePadding="5dp"
+            android:layout_below="@id/profession_selected"
+          android:text="Select your gender"/>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:id="@+id/gender_selected"
+            android:layout_below="@+id/gender"
+            android:layout_height="wrap_content">
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/male"
+                android:text="Male"/>
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/female"
+                android:text="Female"/>
+
+
+
+
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_below="@id/gender_selected"
+            android:id="@+id/age_layout"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="-10dp"
+            android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/enterage"
+            android:drawableStart="@drawable/age_icon"
+            android:textSize="20sp"
+
+            android:textColor="#171717"
+
+            android:drawablePadding="10dp"
+
+            android:text="Pick your age "/>
+
+            <NumberPicker
+                android:id="@+id/age_picker"
+                android:layout_width="wrap_content"
+                android:layout_marginStart="5dp"
+
+
+                android:layout_height="wrap_content"
+               />
+
+        </LinearLayout>
+
+
+
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/question"
+
+            android:drawableStart="@drawable/question_icon"
+            android:textSize="20sp"
+            android:textColor="#171717"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="5dp"
+            android:drawablePadding="5dp"
+            android:layout_below="@id/age_layout"
+            android:text="Question Set"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/question_layout"
+            android:layout_marginTop="9dp"
+            android:orientation="vertical"
+            android:layout_below="@id/question"
+            >
+
+            <TextView
+                android:id="@+id/questiontext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:text="Describe how are you feeling?"
+                android:fontFamily="@font/montserrat"
+                android:textColor="#171717"
+                android:textSize="16sp" />
+
+            <EditText
+
+                android:id="@+id/answer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/questiontext"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="1dp"
+                android:fontFamily="@font/inter_regular"
+                android:hint="Write here..."
+                android:inputType="textLongMessage|text"
+
+                android:minHeight="48dp"
+                android:textSize="15sp"
+                tools:ignore="TouchTargetSizeCheck" />
+            <TextView
+                android:id="@+id/questiontext2"
+                android:layout_marginTop="25dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:text="Describe how are you feeling?"
+                android:fontFamily="@font/montserrat"
+                android:textColor="#171717"
+                android:textSize="16sp" />
+
+            <EditText
+
+                android:id="@+id/answer2"
+                android:inputType="textLongMessage|text"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+               android:hint="Write here..."
+                android:fontFamily="@font/inter_regular"
+                android:layout_marginTop="1dp"
+                android:layout_marginStart="5dp"
+
+                android:textSize="15sp"
+                />
+            <TextView
+                android:id="@+id/questiontext3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_marginStart="6dp"
+                android:text="Describe how are you feeling?"
+                android:fontFamily="@font/montserrat"
+
+                android:textColor="#171717"
+                android:textSize="16sp" />
+
+            <EditText
+
+                android:id="@+id/answer3"
+                android:inputType="textLongMessage|text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+               android:hint="Write here..."
+                android:fontFamily="@font/inter_regular"
+                android:layout_marginTop="1dp"
+                android:layout_marginStart="5dp"
+
+                android:textSize="15sp"
+                />
+
+            <TextView
+                android:id="@+id/questiontext4"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="25dp"
+
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+
+                android:text="Describe how are you feeling?"
+                android:fontFamily="@font/montserrat"
+                android:textColor="#171717"
+                android:textSize="16sp" />
+
+            <EditText
+
+                android:id="@+id/answer4"
+                android:inputType="textLongMessage|text"
+
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+               android:hint="Write here..."
+                android:fontFamily="@font/inter_regular"
+                android:layout_marginTop="1dp"
+                android:layout_marginStart="5dp"
+
+                android:textSize="15sp"
+                />
+
+        </LinearLayout>
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:layout_marginTop="15dp"
+    android:orientation="horizontal"
+
+
+    android:layout_below="@id/question_layout">
+
+    <Button
+        android:id="@+id/submitt"
+        android:layout_marginBottom="10dp"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawablePadding="10dp"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp"
+        android:padding="20dp"
+        android:textColor="@color/white"
+        android:drawableTint="@color/white"
+        android:fontFamily="@font/ubuntu_bold"
+        android:letterSpacing="0.07"
+        android:drawableLeft="@drawable/submit_iconnn"
+
+        android:text="Submit"
+        android:backgroundTint="#140005"/>
+
+
+
+</LinearLayout>
+
+
+
+
+
+    </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>
