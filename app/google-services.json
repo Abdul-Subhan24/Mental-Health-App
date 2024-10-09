@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "417506455937",
+    "project_id": "easemep",
+    "storage_bucket": "easemep.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:417506455937:android:2d5422200ee603ea49f880",
+        "android_client_info": {
+          "package_name": "com.example.easeme"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "417506455937-1dvrk4194ga0mf36gk6ee20c3m75clcq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAugm8bgYksqIn9DZoP2QiYCs3QDxA915c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "417506455937-1dvrk4194ga0mf36gk6ee20c3m75clcq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
